@@ -1,0 +1,45 @@
+
+
+//Paquete en el que se encuentra la clase Gato
+package Gato;
+
+//Clase encapsulada Gato
+public class Gato {
+ // Atributos encapsulados
+ private String nombre;
+ private int edad;
+ 
+ // Constructor
+ public Gato(String nombre, int edad) {
+     this.nombre = nombre;
+     this.edad = edad;
+ }
+ 
+ // Métodos de acceso (getters y setters)
+ public String getNombre() {
+     return nombre;
+ }
+ 
+ public void setNombre(String nombre) {
+     this.nombre = nombre;
+ }
+ 
+ public int getEdad() {
+     return edad;
+ }
+ 
+ public void setEdad(int edad) {
+     this.edad = edad;
+ }
+ 
+ // Otros métodos de la clase Gato
+ public void maullar() {
+     System.out.println("El gato " + nombre + " está maullando.");
+ }
+ 
+ // Método toString para representar el objeto como cadena de texto
+ 
+ public String toString() {
+     return "nombre=" + nombre + ", edad=" + edad + "";
+ }
+}
